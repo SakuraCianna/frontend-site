@@ -36,6 +36,7 @@ npm run build
 - 新增页面后不需要手动更新首页卡片或路由；`src/router/index.ts` 和首页会自动扫描编号 `.vue`。
 - 如需首页预览图，在对应素材目录放 `cover.avif`、`cover.webp`、`cover.png`、`cover.jpg` 或 `cover.jpeg`。
 - 主页、路由、入口文件属于项目外壳；复现作品本身必须遵守编号单文件规则。
+- 本项目完成修改后不需要创建独立 reviewer 子智能体检查；按改动范围运行必要的本地检查并确认 Git 状态即可。
 
 ## 当前结构
 
