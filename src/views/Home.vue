@@ -2,9 +2,6 @@
   <main class="gallery-page">
     <section class="hero-strip" aria-labelledby="collection-title">
       <h1 id="collection-title">前端复刻收藏馆</h1>
-      <p class="intro">
-        自动扫描 <code>src/views</code> 里的编号 Vue 文件，新增作品后首页会自动出现入口。
-      </p>
     </section>
 
     <section v-if="sites.length" class="site-grid" aria-label="复刻作品预览">
@@ -101,23 +98,13 @@ h1 {
   max-width: none;
   margin: 0;
   overflow: hidden;
-  font-size: clamp(2.2rem, 7vw, 7rem);
+  font-size: clamp(1.95rem, calc(7vw - 4px), 6.75rem);
   line-height: 1;
   letter-spacing: -0.085em;
   text-overflow: clip;
   white-space: nowrap;
 }
 
-.intro {
-  max-width: 700px;
-  margin: 0;
-  color: #c4baad;
-  font-family: 'Trebuchet MS', Verdana, sans-serif;
-  font-size: clamp(0.98rem, 1.3vw, 1.25rem);
-  line-height: 1.65;
-}
-
-.intro code,
 .empty-state code {
   color: #fff2d8;
   font-family: 'Trebuchet MS', Verdana, sans-serif;

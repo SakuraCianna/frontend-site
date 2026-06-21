@@ -28,6 +28,7 @@ describe('Home gallery', () => {
 
     expect(wrapper.text()).toContain('前端复刻收藏馆')
     expect(wrapper.text()).toContain('打开')
+    expect(wrapper.text()).not.toContain('自动扫描')
     expect(wrapper.text()).not.toContain('Frontend Replica Vault')
     expect(wrapper.text()).not.toContain('Auto-indexed Vue replicas')
     expect(wrapper.text()).not.toContain('Vue 3 / TypeScript / Node 24')
