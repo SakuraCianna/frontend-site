@@ -1,0 +1,14 @@
+@import 'tailwindcss';
+
+:root {
+  font-synthesis: none;
+  text-rendering: geometricprecision;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+html,
+body,
+#app {
+  min-width: 320px;
+}

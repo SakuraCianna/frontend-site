@@ -9,6 +9,11 @@
 - `TypeScript`
 - `Vite`
 - `vue-router`
+- `Tailwind CSS`
+- `GSAP`
+- `Three.js`
+- `Lenis`
+- `@VueUse/core`
 
 ## 启动命令
 
@@ -32,6 +37,8 @@ npm run build
 - 每个编号 `.vue` 文件必须是完整单文件组件，必须同时包含 `<template>`、`<script setup lang="ts">`、`<style scoped>`。
 - 每个复现页面的模板、样式和 TypeScript 逻辑都必须浓缩在自己的编号 `.vue` 文件中。
 - 禁止为复现页面抽公共 Vue 组件、公共样式、公共 composable、公共工具函数或共享 TypeScript 逻辑。
+- 编号页可以按复刻需要使用已安装的动效和视觉依赖，例如 Tailwind CSS、GSAP、Three.js、Lenis、@VueUse/core。
+- Tailwind 入口在 `src/style.css`，全局 CSS 只放 Tailwind 引入、reset、body 基础样式、字体、CSS 变量和少量工具类；具体页面样式仍优先写在编号 `.vue` 的 `<style scoped>` 中。
 - 如果某个页面需要素材，放到 `src/assets/编号/`，例如 `src/assets/1/` 对应 `src/views/1.vue`。
 - 新增页面后不需要手动更新首页卡片或路由；`src/router/index.ts` 和首页会自动扫描编号 `.vue`。
 - 如需首页预览图，在对应素材目录放 `cover.avif`、`cover.webp`、`cover.png`、`cover.jpg` 或 `cover.jpeg`。
