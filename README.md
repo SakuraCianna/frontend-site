@@ -67,6 +67,7 @@ src/
     1/
     2/
     3/
+    4/
   router/
     index.ts
   views/
@@ -74,6 +75,7 @@ src/
     1.vue
     2.vue
     3.vue
+    4.vue
   App.vue
   main.ts
 ```
